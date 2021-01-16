@@ -12,10 +12,10 @@
 
         <h1>EVENTS</h1>
        <p>
-            <a href="#" onclick="alert('Click me');">click me</a>
+            <a href="#" onclick="alert('Click me');" >click me</a>
        </p>
        <p>
-           <button onclick="alert('CLICK AGAIN AND AGAIN.');">CLICK</button>
+           <button onclick="alert('CLICK AGAIN AND AGAIN.');" onmouseover="this.style.color='red'">DON'T CLICK</button>
        </p>
 
        <!-- events on images -->
@@ -25,6 +25,23 @@
            <img src="thugrose.jpg" onmouseover="src='rose.jpg'" alt="" height="400" width="400" onmouseout="src='thugrose.jpg'">
            <img src="Rose.png" alt="" onmouseover="alert('Be sure to watch me live the next time I perform.')" height="400" width="400">
        </p>
+
+       <p onmouseover="alert('Make sure you repent')">
+           The world ends tommorow
+           <!-- when the mouse moves over this text, an alert "make sure you repent" pops up -->
+       </p>
+
+       <form action="" onsubmit="checkForm();">
+
+           <p>
+               Email:
+               <input type="email" name="" id="email" onfocus="this.style.backgroundColor='yellow'" onblur="this.style.backgroundColor='white'">
+               <!-- onFocus: the fields turns yellow once the user tries to fill in the field -->
+               <!-- onBlur: the field reverts back to white once the user fills in his or her email -->
+           </p>
+
+           <input type="submit" value="SUBMIT">
+       </form>
 
     </div>
 
